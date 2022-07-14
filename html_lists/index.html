@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML lists</title>
+    <style>
+        .nav {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        } 
+        .nav li {
+            float: left;
+        }
+        .nav li a {
+            text-decoration: none;
+            padding: 15px 20px;
+            background-color: #000;
+            color: #fff;
+            transition: 0.3s;
+        }
+        .nav li a:hover {
+            background-color: rgb(203, 108, 108);
+        }
+        .clearfix { clear: both;}
+    </style>
+</head>
+<body>
+
+    <!-- Ordered List -->
+    <ol type="1" start="1">
+        <li>One</li>
+        <li>Two
+            <ol>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ol>
+        </li>
+        <li>Three</li>
+    </ol>
+
+    <hr>
+
+    <!-- Unordered Lists -->
+    <ul style="list-style-type: square;">
+        <li>one</li>
+        <li>two
+            <ul style="list-style-type: square;">
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ul>
+        </li>
+        <li>three</li>
+    </ul>
+
+    <hr>
+
+    <!-- Simple Navigation Menu -->
+    <h2>Navigation Menu with UL (Unordered List)</h2>
+    <ul class="nav">
+        <li><a href="#" target="_blank">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="clearfix"></div>
+
+    
+
+    <!-- Description list -->
+    <dl>
+        <dt>Apple</dt>
+        <dd>Apple is red.</dd>
+        <dt>Mango</dt>
+        <dd>Mango is yellow, green</dd>
+        <dt>Kiwi</dt>
+        <dd>Kiwi is green</dd>
+    </dl>
+</body>
+</html>
