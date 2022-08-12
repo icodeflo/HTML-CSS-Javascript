@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <style>
+        body {
+            background-color: #ccc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            margin: 15px auto;
+            padding: 20px;
+            background-color: rgb(67, 62, 62);
+            color: #fff;
+            transition: 0.6s;
+            border-radius: 20px;
+            width: 300px;
+            /* height: 420px; */
+        }
+        .container:hover {
+            background-color: rgb(91, 91, 156);
+            scale: 1.03;
+        }
+        .container:hover .btn a {
+          color: rgb(91, 91, 156);
+        }
+        .btn {
+            background-color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btn a {
+            text-decoration: none;
+            color:rgb(67, 62, 62);
+            font-weight: 600;
+            transition: 0.6;
+        }
+        img { width: 100%; height: 200px; border-radius: 10px; }
+        .extra {
+          font-weight: 700;
+          font-size: 30px;
+          color: burlywood;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Block Elements -->
+    <!-- p, ul, form, div -->
+
+    <!-- Inline Elements -->
+    <!-- span, a, b, img, button -->
+    <div class="container">
+      <h1>This is a heading</h1>
+      <img src="./pic.jpg" alt="">
+      <p>
+        <span class="extra">Lorem</span> ipsum dolor sit amet, consectetur adipisicing elit. Cum fugit,
+        nihil vel consequatur cumque quibusdam obcaecati tempora! Sapiente ab
+        temporibus aliquid aliquam quo praesentium, omnis iure magnam dicta!
+        Alias, aspernatur!
+      </p>
+      <button class="btn"><a href="https://duckduckgo.com/?t=ffab&q=hello" target="_blank">Click Here</a></button>
+    </div>
+  </body>
+</html>
